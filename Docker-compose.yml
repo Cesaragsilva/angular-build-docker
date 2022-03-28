@@ -1,0 +1,9 @@
+version: "3"
+services:
+  angular-poke-front-end:
+    build: .
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./:/usr/src/app
+    entrypoint: [ "npm", "start" ]
